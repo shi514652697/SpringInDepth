@@ -1,4 +1,4 @@
-package com.negi.spring.sort;
+package com.negi.spring.dependency.injection;
 
 public interface SortAlgorithm {
 	public int[] sort(int[] numbers);
