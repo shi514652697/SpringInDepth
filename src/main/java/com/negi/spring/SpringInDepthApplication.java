@@ -10,7 +10,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.negi.spring.aop.business.Business1;
 import com.negi.spring.aop.business.Business2;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 @SpringBootApplication
+@EnableSwagger2
 public class SpringInDepthApplication implements CommandLineRunner {
 	
 	private static final Logger LOG = LoggerFactory.getLogger(SpringInDepthApplication.class);
