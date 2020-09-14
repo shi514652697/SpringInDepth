@@ -1,12 +1,18 @@
 package com.negi.spring.domain;
 
 import java.io.Serializable;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Convert;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import org.springframework.data.annotation.Id;
+
+import com.negi.spring.converter.StringCryptoConverter;
 
 @Entity
 @Table(name="CG_RA_SESSION")
@@ -29,6 +35,13 @@ public class CgRaSession implements Serializable{
 	
 	@Column(name="CG_USER_ROLE")
 	private String userRole;
+	
+	@OneToMany(mappedBy="cgRaSession", cascade=CascadeType.ALL, orphanRemoval=true)
+	private List<CgEodSigner> cgEodSigners;
+	
+	@Convert(converter=StringCryptoConverter.class)
+	private String AccountNumber;
+	
 
 	public String getCgSessionId() {
 		return cgSessionId;
