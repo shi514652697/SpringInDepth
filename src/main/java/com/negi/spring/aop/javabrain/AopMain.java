@@ -1,12 +1,13 @@
-package com.negi.spring.aop.aspect.javabrain;
+package com.negi.spring.aop.javabrain;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import com.negi.spring.aop.aspect.javabrain.config.AspectConfig;
-import com.negi.spring.aop.aspect.javabrain.model.Circle;
-import com.negi.spring.aop.aspect.javabrain.model.Trangle;
-import com.negi.spring.aop.aspect.javabrain.service.ShapeService;
+import com.negi.spring.aop.javabrain.config.AspectConfig;
+import com.negi.spring.aop.javabrain.model.Circle;
+import com.negi.spring.aop.javabrain.model.Trangle;
+import com.negi.spring.aop.javabrain.service.ShapeService;
+
 
 //@Aspect
 //@Configuration

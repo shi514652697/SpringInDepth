@@ -1,10 +1,10 @@
-package com.negi.spring.aop.aspect.javabrain.service;
+package com.negi.spring.aop.javabrain.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.negi.spring.aop.aspect.javabrain.model.Circle;
-import com.negi.spring.aop.aspect.javabrain.model.Trangle;
+import com.negi.spring.aop.javabrain.model.Circle;
+import com.negi.spring.aop.javabrain.model.Trangle;
+
 
 @Service
 public class ShapeService {

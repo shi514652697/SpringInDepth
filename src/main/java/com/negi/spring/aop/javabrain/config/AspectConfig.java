@@ -1,12 +1,12 @@
-package com.negi.spring.aop.aspect.javabrain.config;
+package com.negi.spring.aop.javabrain.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
-import com.negi.spring.aop.aspect.javabrain.aspect.LoggingAspect;
-import com.negi.spring.aop.aspect.javabrain.model.Circle;
-import com.negi.spring.aop.aspect.javabrain.model.Trangle;
+import com.negi.spring.aop.javabrain.model.Circle;
+import com.negi.spring.aop.javabrain.model.Trangle;
+
 
 @Configuration
 @EnableAspectJAutoProxy

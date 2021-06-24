@@ -1,4 +1,4 @@
-package com.negi.spring.aop.aspect.javabrain.model;
+package com.negi.spring.aop.javabrain.model;
 
 import javax.annotation.PostConstruct;
 
