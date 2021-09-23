@@ -21,7 +21,7 @@ public class InpersonSignerService {
 
 	
 	public SubmitDocumentResponse submitDocusign(String uuid,String businessCode, String countryCode,
-			String channelid,Strinnjbg applicationId,SubmitDocumentRequest submitDocusignRequest)
+			String channelid,String applicationId,SubmitDocumentRequest submitDocusignRequest)
 	{
 		SubmitDocumentResponse subbmitDocumentResponse = new SubmitDocumentResponse();
 		

@@ -7,9 +7,12 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import com.negi.spring.junit.MyMath;
 
+@ExtendWith(MockitoExtension.class)
 public class MyMathTest {
 	MyMath myMath = new MyMath();
 
@@ -39,6 +42,8 @@ public class MyMathTest {
 	public void sum_with3numbers() {
 		System.out.println("Test1");
 		assertEquals(6, myMath.sum(new int[] { 1, 2, 3 }));
+		
+		//when
 	}
 
 	@Test
