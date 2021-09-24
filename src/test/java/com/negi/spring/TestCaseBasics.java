@@ -30,6 +30,8 @@ public class TestCaseBasics {
 		//Assertions.assertNotNull(service.getMethod());
 		
 		//lenient().doNothing().when(repo).deteteItems();
+		
+		//when(restTemplate.exchange(ArgumentMatchers.<HttpEntity<?>> any(), ArgumentMatchers.<Class<MetadataEsignResponse>> any())).thenReturn(stubbdObj);
 	}
 
 }
